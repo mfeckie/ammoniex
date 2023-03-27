@@ -1,6 +1,8 @@
 # Ammoniex
 
-**TODO: Add description**
+Thin wrapper for rust's [ammonia](https://docs.rs/ammonia/latest/ammonia)
+
+To consume it in your projects, you'll need to have a Rust compiler [installed](https://www.rust-lang.org/en-US/install.html).
 
 ## Installation
 
