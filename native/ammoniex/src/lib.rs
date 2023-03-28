@@ -4,4 +4,4 @@ fn clean(html: String) -> String {
     ammonia::clean(&html)
 }
 
-rustler::init!("Elixir.Ammoniex.HTML", [clean]);
+rustler::init!("Elixir.Ammoniex.Nif", [clean]);

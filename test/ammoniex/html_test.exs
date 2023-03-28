@@ -75,4 +75,8 @@ defmodule Ammoniex.HtmlTest do
 
     assert Ammoniex.HTML.clean(dodgy) == ""
   end
+
+  test "deals with nils" do
+    assert Ammoniex.HTML.clean(nil) == ""
+  end
 end
