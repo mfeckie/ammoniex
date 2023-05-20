@@ -6,18 +6,21 @@ To consume it in your projects, you'll need to have a Rust compiler [installed](
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ammoniex` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `ammoniex` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:ammoniex, "~> 0.1.0"}
+    {:ammoniex, "~> 0.2.1"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/ammoniex>.
+Docs can be found at <https://hexdocs.pm/ammoniex>.
+
+## Usage
+
+Usage is very simple.  There's only one function `Ammoniex.HTML.clean/1`, which expects a string and returns a string.
+
+It will sanitize any HTML to mitigate cross site scripting and other malicious code.
 
