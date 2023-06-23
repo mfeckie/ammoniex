@@ -1,7 +1,7 @@
 defmodule Ammoniex.MixProject do
   use Mix.Project
 
-  @version "0.2.1"
+  @version "0.3.0"
 
   def project do
     [
@@ -33,7 +33,7 @@ defmodule Ammoniex.MixProject do
       links: %{
         "Github" => "https://github.com/mfeckie/ammoniex"
       },
-      files: ["lib", "native", "README.md", "mix.exs"],
+      files: ["lib", "native", "README.md", "mix.exs", "checksum-*.exs"],
       exclude_patterns: [
         "native/ammoniex/target"
       ]

@@ -30,3 +30,6 @@ ammoniex-*.tar
 
 /native/*/target
 /target
+
+# checksum file should only be included in Hex packages
+checksum-*.exs
