@@ -1,5 +1,6 @@
 defmodule Ammoniex.Nif do
-  version = Mix.Project.config()[:version]
+  mix_config = Mix.Project.config()
+  version = mix_config[:version]
 
   use RustlerPrecompiled,
     otp_app: :ammoniex,
