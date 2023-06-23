@@ -1,7 +1,13 @@
 defmodule Ammoniex.Nif do
-  use Rustler,
+  version = Mix.Project.config()[:version]
+
+  use RustlerPrecompiled,
     otp_app: :ammoniex,
-    crate: :ammoniex
+    crate: :ammoniex,
+    base_url: "",
+    force_build: "",
+    targets: RustlerPrecompiled.Config.default_targets(),
+    version: version
 
   @doc """
   Given an unsanitized string of HTML, cleans any malicious code

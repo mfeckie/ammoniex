@@ -42,6 +42,7 @@ defmodule Ammoniex.MixProject do
   defp deps do
     [
       {:rustler, "0.28.0"},
+      {:rustler_precompiled, "0.6.1"},
       {:ex_doc, "~> 0.29.4"}
     ]
   end
