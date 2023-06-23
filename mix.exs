@@ -1,10 +1,12 @@
 defmodule Ammoniex.MixProject do
   use Mix.Project
 
+  @version "0.2.1"
+
   def project do
     [
       app: :ammoniex,
-      version: "0.2.1",
+      version: @version,
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       package: package(),
