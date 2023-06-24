@@ -1,7 +1,7 @@
 defmodule Ammoniex.MixProject do
   use Mix.Project
 
-  @version "0.3.0"
+  @version "0.3.1"
 
   def project do
     [
@@ -43,7 +43,7 @@ defmodule Ammoniex.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:rustler, "0.28.0"},
+      {:rustler, "0.29.0"},
       {:rustler_precompiled, "0.6.1"},
       {:ex_doc, "~> 0.29.4"}
     ]
